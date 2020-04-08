@@ -1,0 +1,22 @@
+<mat-card>
+  <mat-card-title>
+    Mapa
+  </mat-card-title>
+  <mat-card-content>
+    <agm-map [latitude]="lat" [longitude]="lng" [zoom]="15">
+      <agm-marker [latitude]="lat" [longitude]="lng">
+        <agm-info-window>
+          <strong>
+            Titulo
+          </strong>
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellat quod minima veniam ex porro ipsam culpa corporis nesciunt, totam ullam similique quam atque eaque, omnis autem ipsa? Fuga, fugiat odit?
+          </p>
+          <button mat-raised-button color="primary">Editar</button>
+          <button mat-raised-button color="warn">Borrar</button>
+        </agm-info-window>
+      </agm-marker>
+    </agm-map>
+  </mat-card-content>
+
+</mat-card>

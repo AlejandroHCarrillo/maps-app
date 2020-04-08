@@ -1,6 +1,13 @@
 # MapsApp
-
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.23.
+
+## instalar Material
+ng add @angular/material
+
+## instalar google Maps
+npm install @agm/core --save
+
+
 
 ## Development server
 
