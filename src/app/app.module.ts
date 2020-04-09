@@ -7,18 +7,22 @@ import { AppComponent } from './app.component';
 
 import { MaterialModule } from './material.module';
 import { MapaComponent } from './components/mapa/mapa.component';
+import { MapaEditarComponent } from './components/mapa/mapa-editar.component';
 
 import { AgmCoreModule } from '@agm/core';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
     AppComponent,
-    MapaComponent
+    MapaComponent,
+    MapaEditarComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule, 
+    ReactiveFormsModule,
 
     MaterialModule,
     AgmCoreModule.forRoot({
@@ -27,6 +31,9 @@ import { AgmCoreModule } from '@agm/core';
 
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
+  entryComponents:[
+    MapaEditarComponent
+  ]
 })
 export class AppModule { }
